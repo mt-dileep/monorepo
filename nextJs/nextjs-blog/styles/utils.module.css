@@ -1,0 +1,22 @@
+.headingMd {
+  font-size: medium;
+}
+.padding1px {
+  padding: 1px;
+}
+.headingLg {
+  font-size: 42px;
+  font-weight: 500;
+}
+.list {
+  list-style: none;
+  margin: 50px auto;
+  padding: 50px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  line-height: 1.4;
+}
+.listItem {
+  margin-top: 10px;
+  margin-left: 10px;
+}

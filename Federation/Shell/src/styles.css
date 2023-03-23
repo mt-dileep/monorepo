@@ -1,0 +1,13 @@
+body,
+html {
+  font-family: sans-serif;
+}
+
+.btn {
+  background-color: #0f6dd2;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+}

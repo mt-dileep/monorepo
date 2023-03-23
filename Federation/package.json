@@ -1,0 +1,23 @@
+{
+  "name": "federation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "./App1",
+    "./App2",
+    "./App3",
+    "./Shell"
+  ],
+  "scripts": {
+    "start": "lerna run --scope=app* --parallel start",
+    "build": "lerna run --scope=app* --parallel build",
+    "serve": "lerna run --scope=app* --parallel serve",
+    "clean": "lerna run --scope=app* --parallel clean"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "author": "Dileep",
+  "license": "ISC"
+}
