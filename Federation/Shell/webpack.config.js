@@ -62,7 +62,8 @@ module.exports = {
       template: "./index.html"
     }),
     new webpack.DefinePlugin({
-      "process.env": JSON.stringify(dotenv)
+      "process.env": JSON.stringify(process.env)
     })
   ]
 };
+console.log("ENV: ", process.env);
