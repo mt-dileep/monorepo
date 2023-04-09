@@ -1,7 +1,9 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin =
   require("webpack").container.ModuleFederationPlugin;
+const DefinePlugin = require("webpack").container.DefinePlugin;
 const path = require("path");
+const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
 
 module.exports = {
   entry: "./src/index.ts",
@@ -58,6 +60,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./index.html"
+    }),
+    new DefinePlugin({
+      "process.env": JSON.stringify(dotenv.parsed)
     })
   ]
 };
