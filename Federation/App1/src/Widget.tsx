@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import moment from "moment";
-import { useFederatedComponent } from "../../Utils";
+import { useFederatedComponent } from "../Utils";
 
 export default function Widget() {
   const [{ module, scope, url }, setSystem] = React.useState({});

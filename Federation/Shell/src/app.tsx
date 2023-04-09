@@ -1,5 +1,5 @@
 import React from "react";
-import { useFederatedComponent } from "../../Utils";
+import { useFederatedComponent } from "../Utils";
 import "./styles.css";
 
 function App() {
