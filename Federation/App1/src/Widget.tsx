@@ -6,7 +6,7 @@ export default function Widget() {
   const [{ module, scope, url }, setSystem] = React.useState({});
   function setApp3() {
     setSystem({
-      url: "http://localhost:3003/remoteEntry.js",
+      url: "https://monorepoapp2.vercel.app/remoteEntry.js",
       scope: "app3",
       module: "./Widget"
     });
