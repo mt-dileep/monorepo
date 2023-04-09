@@ -3,7 +3,7 @@ const ModuleFederationPlugin =
   require("webpack").container.ModuleFederationPlugin;
 const webpack = require("webpack");
 const path = require("path");
-const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
+const dotenv = require("dotenv").config({ path: __dirname + "/.env" }).parsed;
 
 module.exports = {
   entry: "./src/index.ts",
@@ -62,7 +62,8 @@ module.exports = {
       template: "./index.html"
     }),
     new webpack.DefinePlugin({
-      "process.env": JSON.stringify(dotenv.parsed)
+      "process.env": JSON.stringify(dotenv)
     })
   ]
 };
+console.log("dotenv.parsed --------", dotenv.APP1);
