@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-cli serve --open",
     "clean": "rimraf ./dist",
-    "build": "echo $APP1 && webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "build:prod": "webpack --mode production --config  webpack.config.js",
     "test": "react-scripts test",
     "serve": "serve dist -p 3000",
