@@ -7,7 +7,8 @@ function App() {
 
   function setApp1() {
     setSystem({
-      url: "http://localhost:3001/remoteEntry.js",
+      // url: "http://localhost:3001/remoteEntry.js",
+      url: "https://monorepo-mauve-seven.vercel.app/remoteEntry.js",
       scope: "app1",
       module: "./Widget"
     });
