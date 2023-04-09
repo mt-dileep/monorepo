@@ -66,4 +66,3 @@ module.exports = {
     })
   ]
 };
-console.log("dotenv.parsed --------", dotenv.APP1);
