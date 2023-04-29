@@ -1,0 +1,42 @@
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.hide {
+  display: none;
+}
+.dd {
+  width: 200px;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  background-color: white;
+  transition: all 1s;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 0;
+}
+.ddPlace {
+  border-radius: 5px;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px 8px;
+}
+li {
+  height: 20px;
+  padding: 4px 8px;
+  transition: all 0.4s;
+  color: black;
+}
+li:hover {
+  background-color: rgb(193, 224, 255);
+  color: rgb(0, 0, 0);
+  padding: 4px 8px;
+  border-radius: 5px;
+  transform: translate(8px);    
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.06);
+}

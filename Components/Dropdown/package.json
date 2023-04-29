@@ -1,0 +1,44 @@
+{
+  "name": "dileep_dropdown",
+  "version": "1.0.7",
+  "description": "",
+  "main": "lib/index.js",
+  "package-name": "testdileep_dropdown",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "clean": "rimraf lib/",
+    "copy-files": "cp -r ./src/**/*.css lib/",
+    "build": "yarn clean && tsc && yarn copy-files",
+    "start": "webpack-cli serve",
+    "test": "react-scripts test",
+    "serve": "serve dist -p 3001",
+    "dist": "npm run build -- --profile &&  ws --https --spa ./index.html -d ./dist/ -p 3002"
+  },
+  "author": "Dileep",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^4.1.2",
+    "serve": "^14.2.0",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "5.72.1",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.9.3"
+  }
+}
