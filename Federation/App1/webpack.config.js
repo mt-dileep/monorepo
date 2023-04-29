@@ -3,7 +3,7 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 const deps = require("./package.json").dependencies;
 module.exports = {
-  entry: "./src/index.ts",
+  entry: "./index.ts",
   mode: "development",
   target: "web",
   devtool: "inline-source-map",
@@ -28,7 +28,11 @@ module.exports = {
           presets: ["@babel/preset-react"]
         }
       },
-      { test: /\.([cm]?ts|tsx)$/, loader: "ts-loader" }
+      { test: /\.([cm]?ts|tsx)$/, loader: "ts-loader" },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      }
     ]
   },
   resolve: {

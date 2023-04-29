@@ -14,6 +14,8 @@
   "author": "Dileep",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.3.4",
+    "dileep_dropdown": "^1.0.7",
     "moment": "^2.29.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
@@ -30,6 +32,8 @@
     "typescript": "^4.9.5",
     "webpack": "5.72.1",
     "webpack-cli": "4.10.0",
-    "webpack-dev-server": "4.9.3"
+    "webpack-dev-server": "4.9.3",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2"
   }
 }

@@ -1,8 +1,13 @@
 import React, { Suspense } from "react";
 import moment from "moment";
 import { useFederatedComponent } from "../Utils";
+import useLogger, { getExtentedLogger } from "./useLogger";
+import Dropdown from "dileep_dropdown";
 
 export default function Widget() {
+  const logger = getExtentedLogger("_APP", useLogger());
+
+  logger.log("inside widget");
   const [{ module, scope, url }, setSystem] = React.useState({});
   function setApp3() {
     setSystem({
@@ -26,6 +31,12 @@ export default function Widget() {
         color: "white"
       }}
     >
+      <Dropdown
+        options={[
+          { label: "red", value: "1" },
+          { label: "green", value: "2" }
+        ]}
+      />
       <h2>App 1 Widget</h2>
       <p>
         Moment shouldn't download twice, the host has no moment.js <br />{" "}
