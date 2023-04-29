@@ -3,7 +3,7 @@ const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 const deps = require("./package.json").dependencies;
 module.exports = {
-  entry: "./index.tsx",
+  entry: "./app.tsx",
   mode: process.env.NODE_ENV,
   target: "web",
   devtool: "inline-source-map",
@@ -11,12 +11,12 @@ module.exports = {
     static: {
       directory: path.join(__dirname, "dist")
     },
-    port: 3001
+    port: 4001
   },
   output: {
     publicPath: "auto",
     filename: "bundle.js",
-    path: path.resolve(__dirname, "lib")
+    path: path.resolve(__dirname, "dist")
   },
   module: {
     rules: [
