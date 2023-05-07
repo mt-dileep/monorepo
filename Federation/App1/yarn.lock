@@ -1267,10 +1267,10 @@ detect-node@^2.0.4:
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
-dileep_dropdown@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/dileep_dropdown/-/dileep_dropdown-1.0.7.tgz#7cac0e960b83717e48beb34f23a04ddfdd08186a"
-  integrity sha512-hIIHJqndfEiptzE4/3OmCyWs/we19x5zXdfzRwo2TwhFUIIx7dhFtIjMFdwtdjwwsX6S4g3ERw6zyIHI8szT4g==
+dileep_dropdown@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/dileep_dropdown/-/dileep_dropdown-1.0.8.tgz#866f218e9efe36ec93bd9bf1efccd3857d87548d"
+  integrity sha512-HiLeonUreFw03T/flkG8Oy2dBzBC8upqauLAt52j59vVa2gvAulRnWxEaeQGyr9+zrT0b8K1Mf5dhAkL3if9pQ==
   dependencies:
     react "^16.13.0"
     react-dom "^16.13.0"
