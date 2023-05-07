@@ -4,7 +4,7 @@ const path = require("path");
 const deps = require("./package.json").dependencies;
 module.exports = {
   entry: "./app.tsx",
-  mode: process.env.NODE_ENV,
+  mode: "development",
   target: "web",
   devtool: "inline-source-map",
   devServer: {
